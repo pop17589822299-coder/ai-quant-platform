@@ -207,16 +207,23 @@ def code_identity():
     head = git("rev-parse", "HEAD")
     for ref in (B_REFERENCE, D_REFERENCE):
         subprocess.run(["git", "merge-base", "--is-ancestor", ref, head], cwd=ROOT, check=True)
+    validation_files = sorted((ROOT / "scripts").glob("*quant*consistency*.py"))
+    validation_files += [ROOT / "scripts" / "verify_quant_handoff.py",
+                         ROOT / "docs" / "C_FROZEN_R2_HANDOFF.json"]
     return {"head": head, "b_reference": B_REFERENCE, "d_reference": D_REFERENCE,
             "working_tree_status": git("status", "--short"),
             "c_validation_files_sha256": {str(path.relative_to(ROOT)): sha256(path)
-                for path in sorted((ROOT / "scripts").glob("*quant*consistency*.py"))}}
+                for path in validation_files}}
 
 
 def run(args):
     full = args.frozen_dir is not None
     root = Path(args.frozen_dir or args.source_dir).resolve()
     metadata = Path(args.metadata).resolve() if args.metadata else root / "metadata.json"
+    handoff = None
+    if args.verify_r2_handoff:
+        from scripts.verify_quant_handoff import verify_quant_handoff
+        handoff = verify_quant_handoff(root, args.archive)
     inputs = load_inputs(root, metadata,
                          Path(args.readback).resolve() if args.readback else None,
                          args.readback_sha256, full_package=full)
@@ -258,6 +265,8 @@ def run(args):
                         "B supplied the MySQL export; C verified bytes and calculations, not export provenance at a live server",
                         "This scoped PASS is not V1 delivery or merge approval"],
     }
+    if handoff is not None:
+        report["r2_delivery_verification"] = handoff
     if not full:
         report["not_run"].append("D full frozen package validation: new stock snapshot/unified metadata not supplied")
     if args.output_dir:
@@ -284,9 +293,16 @@ def main(argv=None):
     parser.add_argument("--readback", help="Actual B MySQL export (quant-only mode)")
     parser.add_argument("--readback-sha256", help="Hash independently received from B")
     parser.add_argument("--output-dir", help="New output directory; existing results are never replaced")
+    parser.add_argument("--verify-r2-handoff", action="store_true",
+                        help="Pin all R2 assets to C's reviewed checklist before full-package regression")
+    parser.add_argument("--archive", help="Original R2 ZIP; requires --verify-r2-handoff")
     args = parser.parse_args(argv)
     if args.frozen_dir and (args.readback or args.readback_sha256):
         parser.error("full-package mode must use the manifest's readback file/hash")
+    if args.verify_r2_handoff and (not args.frozen_dir or args.metadata):
+        parser.error("--verify-r2-handoff requires --frozen-dir and its original metadata.json")
+    if args.archive and not args.verify_r2_handoff:
+        parser.error("--archive requires --verify-r2-handoff")
     try:
         return run(args)
     except (AssertionError, ValueError, RuntimeError, OSError, KeyError, TypeError,

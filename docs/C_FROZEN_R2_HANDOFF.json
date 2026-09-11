@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "purpose": "C delivery index; not a replacement for B's immutable metadata.json or MANIFEST.json",
+  "release_tag": "v1-frozen-package-r2",
+  "release_url": "https://github.com/Lawera2601/ai-quant-platform/releases/tag/v1-frozen-package-r2",
+  "download_prefix": "https://github.com/Lawera2601/ai-quant-platform/releases/download/v1-frozen-package-r2/",
+  "code_references": {
+    "b_delivery": "7157cf6abcdfba010bbbb164a460ccd9463e837f",
+    "b_in_d": "35a048271d437281ed837ac94b437aac5302f332",
+    "b_backend_tree": "5372882b7b0ad8d0691c41e77266009d2aba4199",
+    "d_integration": "a097f9a58c457d0fe194a038d8ad1d49ef044337"
+  },
+  "sample": {
+    "stock_code": "600519",
+    "actual_start_date": "2025-01-02",
+    "actual_end_date": "2026-08-31",
+    "captured_at": "2026-09-09T02:05:50.619248+00:00",
+    "rows": 403,
+    "adjust": "qfq",
+    "frequency": "daily",
+    "precision": {
+      "price_ndigits": 4,
+      "amount_ndigits": 2,
+      "percent_ndigits": 6,
+      "volume": "integer"
+    }
+  },
+  "assets": [
+    {
+      "file": "ai-quant-v1-frozen-package-r2.zip",
+      "kind": "archive",
+      "bytes": 52816,
+      "sha256": "90b1f207b209cfea3a1570abb3c2fbbda5afb7079e01e3c11a34671e8c1df7dd"
+    },
+    {
+      "file": "600519_qfq_20250101_20260831.json",
+      "kind": "kline",
+      "bytes": 104691,
+      "sha256": "fe6622237a6e5c764918b89fc33397e7a6ed25743f175603ef626cc4840d22a2"
+    },
+    {
+      "file": "a_share_trade_dates.json",
+      "kind": "calendar",
+      "bytes": 140755,
+      "sha256": "20ea7c1986245e0e6cdf71f648cd95bfc07c552c7fb844467c5fc4b57267271e"
+    },
+    {
+      "file": "stock_basic_600519.json",
+      "kind": "stock",
+      "bytes": 159,
+      "sha256": "6aa7a8b0d473b413bbe37fada38a7e86ba08fe263e77bcc9f64418e4c2d4e85f"
+    },
+    {
+      "file": "mysql_readback_600519.json",
+      "kind": "readback",
+      "bytes": 84565,
+      "sha256": "5e92659b05647ca17c52ddb0d1a86cf952d46500ce26f2abb342cf693b4082df"
+    },
+    {
+      "file": "metadata.json",
+      "kind": "metadata",
+      "bytes": 4050,
+      "sha256": "83be4890b091aac044a36ea0ca85fcce8861126463aab33c62c248dfd735e7a7"
+    },
+    {
+      "file": "MANIFEST.json",
+      "kind": "manifest",
+      "bytes": 687,
+      "sha256": "937d93ac57aa7921f4e5e9f8e93ad3dfe2592a0ac84b55c22e6ae6038f380c10"
+    },
+    {
+      "file": "stock_basic_600519.raw.json",
+      "kind": "stock_raw",
+      "bytes": 193,
+      "sha256": "e3192375e022538178c0afaf4453a30b37e78e4e77e2e680719232588c6c8cfe"
+    },
+    {
+      "file": "stock_basic_600519.provenance.json",
+      "kind": "stock_provenance",
+      "bytes": 360,
+      "sha256": "e3c57c91c0091ae833911a2f7ea0650e5eee79522047d31dfc8abd1031bef88c"
+    }
+  ],
+  "quant_config": {
+    "contract_status": "provisional",
+    "frequency": "daily",
+    "adjust": "qfq",
+    "ma_short_period": 5,
+    "ma_medium_period": 10,
+    "ma_long_period": 20,
+    "ma_trend_period": 60,
+    "macd_fast_period": 12,
+    "macd_slow_period": 26,
+    "macd_signal_period": 9,
+    "macd_hist_multiplier": 2.0,
+    "rsi_period": 14,
+    "boll_period": 20,
+    "boll_std_multiplier": 2.0,
+    "boll_std_ddof": 0,
+    "trend_max_score": 40,
+    "momentum_max_score": 25,
+    "volume_max_score": 20,
+    "risk_max_score": 15,
+    "rsi_strong_lower": 50.0,
+    "rsi_strong_upper": 70.0,
+    "rsi_neutral_lower": 40.0,
+    "rsi_neutral_upper": 80.0,
+    "macd_rising_periods": 3,
+    "volume_ma_period": 20,
+    "volume_high_ratio": 1.2,
+    "volume_normal_ratio": 0.8,
+    "flat_price_change_threshold": 0.005,
+    "volatility_lookback": 60,
+    "volatility_std_ddof": 1,
+    "low_volatility_threshold": 0.2,
+    "medium_volatility_threshold": 0.35,
+    "drawdown_lookback": 120,
+    "low_drawdown_threshold": -0.1,
+    "medium_drawdown_threshold": -0.2,
+    "strategy_name": "ma5_ma20_long_only",
+    "initial_cash": 100000.0,
+    "transaction_cost": 0.001,
+    "slippage": 0.0,
+    "allow_fractional_shares": true,
+    "risk_free_rate": 0.0,
+    "annualization_days": 252,
+    "benchmark_method": "first_close_to_last_close"
+  },
+  "quant_expectations": {
+    "score": 33,
+    "order_count": 24,
+    "equity_curve_points": 403,
+    "total_return": -0.09165774117956027,
+    "final_equity": 90834.22588204397
+  },
+  "acceptance_scope": {
+    "news_snapshot": "absent",
+    "mysql_evidence": "B-supplied export; C byte/field/full-analysis comparison is not a new live MySQL run",
+    "live_akshare": "separate acceptance; upstream 50001 only exercises error handling",
+    "llm_browser_persistence": "separate D/A acceptance",
+    "merge_approval": false
+  }
+}
