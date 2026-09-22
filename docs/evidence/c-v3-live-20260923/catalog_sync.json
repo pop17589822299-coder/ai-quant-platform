@@ -1,0 +1,11 @@
+{
+  "label": "catalog_sync",
+  "http_status": 502,
+  "code": 50001,
+  "seconds": 17.97,
+  "body": {
+    "code": 50001,
+    "message": "data provider error",
+    "data": null
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "mode": "real_llm_connectivity_only",
+  "model": "deepseek-flash",
+  "passed": true,
+  "seconds": 4.22
+}

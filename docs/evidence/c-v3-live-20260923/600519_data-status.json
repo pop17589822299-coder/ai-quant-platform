@@ -1,0 +1,33 @@
+{
+  "code": 0,
+  "message": "success",
+  "data": {
+    "stock_code": "600519",
+    "catalog": {
+      "synced": false,
+      "row_count": 0,
+      "last_success_at": null,
+      "last_attempt_at": "2026-09-22T16:11:26Z",
+      "source": null,
+      "last_error": "stock catalog unavailable (primary: TimeoutError: AKShare call exceeded 0.5s; delayed host: StockDataProviderError: delayed host catalog HTTP 502)"
+    },
+    "kline": {
+      "mode": "live",
+      "source": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get",
+      "rows": 344,
+      "first_trade_date": "2025-04-28",
+      "last_trade_date": "2026-09-22",
+      "last_refreshed_at": "2026-09-22T16:13:34Z",
+      "coverage": "known",
+      "expected_trading_days": 344,
+      "last_attempt_at": "2026-09-22T16:13:34Z",
+      "last_error": null,
+      "freshness": {
+        "status": "fresh",
+        "stale_days": 1,
+        "max_stale_days": 3
+      }
+    },
+    "as_of": "2026-09-22T16:13:34.696000Z"
+  }
+}

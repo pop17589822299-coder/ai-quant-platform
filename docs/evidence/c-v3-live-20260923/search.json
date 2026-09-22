@@ -1,0 +1,8 @@
+{
+  "http_status": 503,
+  "body": {
+    "code": 50006,
+    "message": "stock catalog not synced",
+    "data": null
+  }
+}

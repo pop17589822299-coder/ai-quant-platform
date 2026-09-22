@@ -1,0 +1,9 @@
+{
+  "http_status": 502,
+  "seconds": 7.27,
+  "body": {
+    "code": 50001,
+    "message": "data provider error",
+    "data": null
+  }
+}

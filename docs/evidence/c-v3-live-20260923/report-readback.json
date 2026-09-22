@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "report_id": 1,
+  "backtest_id": 3,
+  "model": "deepseek-flash",
+  "analysis_mode": "custom_backtest",
+  "two_gets_equal": true,
+  "new_mysql_connection_readback_equal": true,
+  "saved_report_count": 1,
+  "context_hash": "911e83cac8ede1a38794096e40cacf85f1d4b7c628f35181824c4b12ed6f5968",
+  "report_sha256": "c3a21503427a8b9271db0cd4ee2a86d56f924776fadcc5aec438352ab772b914",
+  "seconds": 0.937,
+  "source_mode": "unknown"
+}

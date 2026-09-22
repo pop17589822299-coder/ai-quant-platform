@@ -1,0 +1,108 @@
+{
+  "code": 0,
+  "message": "success",
+  "data": {
+    "trend": "neutral",
+    "summary": "本报告仅解释已保存的 ma_long_only 均线回测（backtest_id=3），不分析当前股票趋势、不补充最新行情、不纳入新闻，也不重新计算或推荐最优参数。保存时间为 2026-09-23T00:13:27Z（data_as_of 与该保存时间一致），实际回测区间为 2025-07-04 至 2026-09-22。策略使用 5 日均线与 20 日均线，初始资金 100000.0，交易成本 0.001，滑点 0.0。保存的回测指标显示：总收益 -0.125375366188323，年化收益 -0.106762827326895，最大回撤 -0.218615701154201，夏普比率 -0.707832704253192，胜率 0.2，交易次数 10，订单次数 20，基准收益 -0.0806023821623076，最终权益 87462.4633811677。以上均为历史回测保存结果，不代表未来收益。",
+    "technical_analysis": "technical_analysis 仅解释该保存回测中的策略与参数：策略名为 ma_long_only，语义版本为 v2_windowed，算法版本为 ma_long_only_v2.0.0。生效参数为 ma_short_period=5、ma_long_period=20、initial_cash=100000.0、transaction_cost=0.001、slippage=0.0。该策略属于仅做多均线策略，并按保存的回测语义执行；本报告不分析 600519 当前股票趋势，不判断当前均线状态，不补充最新行情，也不重新计算或推荐最优参数。回测前设有预热区间：2025-06-06 至 2025-07-03，required_rows=20，used_rows=20。实际保存回测区间为 requested_start_date=2025-07-04 至 requested_end_date=2026-09-22，start_date=2025-07-04，end_date=2026-09-22。价格基准为 qfq。",
+    "quant_analysis": "quant_analysis 仅解释该保存回测的表现，不重新计算指标、回测或评分。保存指标如下：initial_cash=100000.0，final_equity=87462.4633811677，total_return=-0.125375366188323，annual_return=-0.106762827326895，max_drawdown=-0.218615701154201，sharpe_ratio=-0.707832704253192，win_rate=0.2，trade_count=10，order_count=20，benchmark_return=-0.0806023821623076。initial_equity 记录为 trade_date=2025-07-04、equity=100000.0、valuation=before_open。保存结果中交易次数为 10、订单次数为 20，胜率为 0.2。以上均为该保存回测在指定历史区间内的结果，不代表未来收益。",
+    "news_analysis": "本报告未纳入新闻数据",
+    "advantages": [
+      "报告基于已保存的结构化回测数据，包含 backtest_id、参数、区间与指标，口径明确。",
+      "策略参数已记录：ma_short_period=5、ma_long_period=20、initial_cash=100000.0、transaction_cost=0.001、slippage=0.0，便于复核该保存回测。",
+      "保存结果中包含预热区间信息：2025-06-06 至 2025-07-03，required_rows=20，used_rows=20。",
+      "保存指标包含总收益、年化收益、最大回撤、夏普比率、胜率、交易次数、订单次数、基准收益与最终权益，可用于解释该次历史回测表现。",
+      "执行假设中记录了信号与成交时点：signal=previous_observation_close，execution=next_observation_open，并记录 transaction_cost=proportional_on_each_buy_and_sell。",
+      "价格基准记录为 qfq，且保存了 data_hash 与 provenance 字段，便于识别该次回测的数据来源与版本信息。"
+    ],
+    "risks": [
+      "保存回测的总收益为 -0.125375366188323，年化收益为 -0.106762827326895，历史表现不代表未来收益。",
+      "保存回测的最大回撤为 -0.218615701154201，说明该历史区间内出现明显回撤。",
+      "保存回测的夏普比率为 -0.707832704253192，胜率为 0.2，交易次数为 10，样本内表现偏弱且交易样本较少。",
+      "slippage=0.0，成交滑点按零处理；execution_assumptions 中 slippage 描述为 buy_price_increased_sell_price_decreased，但该次保存回测参数未设置滑点。",
+      "执行假设为 research_fractional_v1，fractional_shares=true，属于研究用分数股简化模型；exchange_execution_constraints=not_modelled，未建模交易所执行约束。",
+      "forced_final_sale=false，期末未强制卖出；benchmark_includes_costs=false，基准收益未包含成本，而策略交易成本按 proportional_on_each_buy_and_sell 计入。",
+      "provenance 中 source_mode=unknown、provider=unknown，数据来源信息不完整。",
+      "本报告不分析当前股票趋势，不补充最新行情，不纳入新闻，也不给出涨跌预测、目标价或收益承诺。"
+    ],
+    "conclusion": "该报告仅解释已保存的 ma_long_only 均线回测。data_as_of 为 2026-09-23T00:13:27Z，即回测保存时间；实际回测区间为 2025-07-04 至 2026-09-22。保存结果显示总收益、年化收益、最大回撤、夏普比率与胜率等历史指标，且执行采用 research_fractional_v1 简化成交假设：前一观测收盘信号、下一观测开盘成交、买卖按比例计入交易成本、滑点参数为 0.0、允许分数股、未建模交易所执行约束、期末未强制卖出，基准收益未包含成本。上述历史表现不代表未来收益；本报告不分析当前股票趋势，不纳入新闻数据，也不重新计算指标或推荐参数。",
+    "stock_code": "600519",
+    "quant_score": null,
+    "model_name": "deepseek-flash",
+    "analysis_mode": "custom_backtest",
+    "backtest_id": 3,
+    "report_id": 1,
+    "created_at": "2026-09-22T16:14:26Z",
+    "data_as_of": "2026-09-23T00:13:27Z",
+    "source_mode": "unknown",
+    "prompt_version": "v3.backtest.1",
+    "context_schema_version": "v3.backtest.1",
+    "output_schema_version": "v2.0",
+    "context_hash": "911e83cac8ede1a38794096e40cacf85f1d4b7c628f35181824c4b12ed6f5968",
+    "snapshot_status": "complete",
+    "context_snapshot": {
+      "stock_code": "600519",
+      "backtest_id": 3,
+      "backtest_created_at": "2026-09-23T00:13:27Z",
+      "data_as_of": "2026-09-23T00:13:27Z",
+      "strategy_name": "ma_long_only",
+      "semantics_version": "v2_windowed",
+      "algorithm_version": "ma_long_only_v2.0.0",
+      "effective_parameters": {
+        "ma_short_period": 5,
+        "ma_long_period": 20,
+        "initial_cash": 100000.0,
+        "transaction_cost": 0.001,
+        "slippage": 0.0
+      },
+      "requested_start_date": "2025-07-04",
+      "requested_end_date": "2026-09-22",
+      "start_date": "2025-07-04",
+      "end_date": "2026-09-22",
+      "warmup": {
+        "start_date": "2025-06-06",
+        "end_date": "2025-07-03",
+        "required_rows": 20,
+        "used_rows": 20
+      },
+      "execution_assumptions": {
+        "model": "research_fractional_v1",
+        "signal": "previous_observation_close",
+        "slippage": "buy_price_increased_sell_price_decreased",
+        "execution": "next_observation_open",
+        "price_basis": "qfq",
+        "first_day_signal": "last_warmup_close",
+        "transaction_cost": "proportional_on_each_buy_and_sell",
+        "forced_final_sale": false,
+        "fractional_shares": true,
+        "benchmark_includes_costs": false,
+        "exchange_execution_constraints": "not_modelled"
+      },
+      "metrics": {
+        "initial_cash": 100000.0,
+        "final_equity": 87462.4633811677,
+        "total_return": -0.125375366188323,
+        "annual_return": -0.106762827326895,
+        "max_drawdown": -0.218615701154201,
+        "sharpe_ratio": -0.707832704253192,
+        "win_rate": 0.2,
+        "trade_count": 10,
+        "order_count": 20,
+        "benchmark_return": -0.0806023821623076
+      },
+      "initial_equity": {
+        "trade_date": "2025-07-04",
+        "equity": 100000.0,
+        "valuation": "before_open"
+      },
+      "data_hash": "2ac654636cf13aeec861359f5a4f10142e185d867a877003aadca371fbf481fb",
+      "provenance": {
+        "source_mode": "unknown",
+        "provider": "unknown",
+        "market_start_date": "2025-07-04",
+        "market_end_date": "2026-09-22",
+        "market_rows": 299
+      }
+    }
+  }
+}

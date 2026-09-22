@@ -1,0 +1,10 @@
+{
+  "database": "ai_quant_v3_live_20260922_161047_701864",
+  "mysql_version": "8.0.31",
+  "schema_version": 9,
+  "mode": "live",
+  "fixture_overrides": false,
+  "backend": "http://127.0.0.1:8125",
+  "frontend": "http://127.0.0.1:5185",
+  "pid": 39776
+}

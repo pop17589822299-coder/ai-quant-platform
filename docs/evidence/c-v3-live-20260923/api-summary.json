@@ -1,0 +1,56 @@
+[
+  {
+    "label": "600519_info",
+    "http_status": 200,
+    "code": 0,
+    "seconds": 8.8
+  },
+  {
+    "label": "600519_kline",
+    "http_status": 200,
+    "code": 0,
+    "seconds": 4.94,
+    "rows": 299,
+    "first_date": "2025-07-04",
+    "last_date": "2026-09-22"
+  },
+  {
+    "label": "catalog_sync",
+    "http_status": 502,
+    "code": 50001,
+    "seconds": 17.97,
+    "message": "data provider error"
+  },
+  {
+    "label": "000001_info",
+    "http_status": 502,
+    "code": 50001,
+    "seconds": 7.26,
+    "message": "data provider error"
+  },
+  {
+    "label": "000001_kline",
+    "http_status": 200,
+    "code": 0,
+    "seconds": 7.25,
+    "rows": 299,
+    "first_date": "2025-07-04",
+    "last_date": "2026-09-22"
+  },
+  {
+    "label": "300750_info",
+    "http_status": 502,
+    "code": 50001,
+    "seconds": 7.74,
+    "message": "data provider error"
+  },
+  {
+    "label": "300750_kline",
+    "http_status": 200,
+    "code": 0,
+    "seconds": 6.94,
+    "rows": 299,
+    "first_date": "2025-07-04",
+    "last_date": "2026-09-22"
+  }
+]
