@@ -20,6 +20,7 @@ p = argparse.ArgumentParser()
 p.add_argument('--source', type=Path, required=True)
 p.add_argument('--git-repo', type=Path, required=True)
 p.add_argument('--output', type=Path, required=True)
+p.add_argument('--candidate', help='Exact integrated SHA; use its script and audit its tree')
 a = p.parse_args()
 os.environ.update(MYSQL_HOST='127.0.0.1', MYSQL_PORT='1', MYSQL_USER='unused', MYSQL_PASSWORD='', LLM_API_KEY='')
 sys.path.insert(0, str(a.source.resolve()))
@@ -39,6 +40,8 @@ def sqlite_pk(t, compiler, **kw):
 
 D = 'b506618e904b8b0edb09b5a06d0110c9392f493a'
 B = 'a89c2ea5c67eb8a1b64f1ac195e2ef80d4390a1a'
+candidate = a.candidate or B
+audit_head = a.candidate or D
 def git(*args):
     return subprocess.check_output(['git', '-C', str(a.git_repo), *args])
 
@@ -57,9 +60,9 @@ class Provider:
 results = {}
 for name, revision, unknown, dirty in [
     ('D_original_reproduces_intraday_write', D, False, False),
-    ('B_patch_cold_cache_caps_at_completed_day', B, False, False),
-    ('B_patch_unknown_completed_day_rejects', B, True, False),
-    ('B_patch_old_dirty_tail_is_replaced', B, False, True),
+    ('candidate_cold_cache_caps_at_completed_day', candidate, False, False),
+    ('candidate_unknown_completed_day_rejects', candidate, True, False),
+    ('candidate_old_dirty_tail_is_replaced', candidate, False, True),
 ]:
     raw = git('show', revision + ':scripts/warm_market_data.py')
     namespace = {'__file__': str(a.source / 'scripts/warm_market_data.py'), '__name__': 'c_warm_probe'}
@@ -96,12 +99,15 @@ for name, revision, unknown, dirty in [
     engine.dispose()
 
 trees = {path: {ref: git('rev-parse', ref + ':' + path).decode().strip() for ref in [
-    'bcbd559acb67d3435fe7a840f34ad73bbe35bbad', D]} for path in ['backend', 'frontend', 'scripts', 'tests', 'docs/evidence/c-delivery-20260917']}
-report = {'D_head': D, 'B_script_commit': B, 'executed_core_sha': subprocess.check_output(['git', '-C', str(a.source), 'rev-parse', 'HEAD']).decode().strip(),
-    'scope': 'exact CLI main + real StockService/MarketDataService + SQLite; synthetic Provider/calendar. B script + D core is a local diagnostic combination, not an integrated SHA.',
+    'bcbd559acb67d3435fe7a840f34ad73bbe35bbad', audit_head]} for path in ['backend', 'frontend', 'scripts', 'tests', 'docs/evidence/c-delivery-20260917']}
+executed_core_sha = subprocess.check_output(['git', '-C', str(a.source), 'rev-parse', 'HEAD']).decode().strip()
+if a.candidate:
+    assert executed_core_sha == a.candidate, 'Integrated candidate must match the executed checkout'
+report = {'audited_head': audit_head, 'B_script_commit': B, 'executed_core_sha': executed_core_sha,
+    'scope': 'exact CLI main + real StockService/MarketDataService + SQLite; synthetic Provider/calendar. Candidate scenarios execute the integrated SHA when --candidate is supplied; original defect is retained as a control.',
     'existing_databases_modified': False, 'tree_audit': trees,
     'production_and_fixed_package_identical': all(len(set(v.values())) == 1 for v in trees.values()),
-    'D_changes_since_tested_core': git('diff', '--name-status', 'bcbd559acb67d3435fe7a840f34ad73bbe35bbad', D).decode(),
+    'D_changes_since_tested_core': git('diff', '--name-status', 'bcbd559acb67d3435fe7a840f34ad73bbe35bbad', audit_head).decode(),
     'results': results, 'all_expected_observations_confirmed': all(v['expected_observation_confirmed'] for v in results.values())}
 a.output.write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 print(json.dumps(report, ensure_ascii=False, indent=2))

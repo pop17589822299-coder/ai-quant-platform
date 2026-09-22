@@ -1,0 +1,93 @@
+{
+  "audited_head": "5fa91ea524a403b31cc5980480aeb7c25898479b",
+  "B_script_commit": "a89c2ea5c67eb8a1b64f1ac195e2ef80d4390a1a",
+  "executed_core_sha": "5fa91ea524a403b31cc5980480aeb7c25898479b",
+  "scope": "exact CLI main + real StockService/MarketDataService + SQLite; synthetic Provider/calendar. Candidate scenarios execute the integrated SHA when --candidate is supplied; original defect is retained as a control.",
+  "existing_databases_modified": false,
+  "tree_audit": {
+    "backend": {
+      "bcbd559acb67d3435fe7a840f34ad73bbe35bbad": "36434a1a7b2bc29f8e439a34760403576b8f70b9",
+      "5fa91ea524a403b31cc5980480aeb7c25898479b": "36434a1a7b2bc29f8e439a34760403576b8f70b9"
+    },
+    "frontend": {
+      "bcbd559acb67d3435fe7a840f34ad73bbe35bbad": "1acb94b432d325f8e84417c2432f3982fbf706f5",
+      "5fa91ea524a403b31cc5980480aeb7c25898479b": "1acb94b432d325f8e84417c2432f3982fbf706f5"
+    },
+    "scripts": {
+      "bcbd559acb67d3435fe7a840f34ad73bbe35bbad": "efc91dd43627cdb22b5fa39a1b91718f7a9dae81",
+      "5fa91ea524a403b31cc5980480aeb7c25898479b": "20974c46c4f7fe0b9b35467b307bbdf738b7db2a"
+    },
+    "tests": {
+      "bcbd559acb67d3435fe7a840f34ad73bbe35bbad": "71c8db8af8ce052ffa3048fab9f23b6901d82fdc",
+      "5fa91ea524a403b31cc5980480aeb7c25898479b": "71c8db8af8ce052ffa3048fab9f23b6901d82fdc"
+    },
+    "docs/evidence/c-delivery-20260917": {
+      "bcbd559acb67d3435fe7a840f34ad73bbe35bbad": "28d7b2591fe3fcbe662af9f915a7db4018d3641c",
+      "5fa91ea524a403b31cc5980480aeb7c25898479b": "28d7b2591fe3fcbe662af9f915a7db4018d3641c"
+    }
+  },
+  "production_and_fixed_package_identical": false,
+  "D_changes_since_tested_core": "M\tdocs/C_PROGRESS.md\nA\tdocs/C_V2_119A10C_REVIEW_20260922.md\nA\tdocs/C_V2_BCBD559_ACCEPTANCE_20260922.md\nA\tdocs/C_V2_F465EE3_REVIEW_20260922.md\nA\tdocs/C_V2_WARM_ENTRY_REVIEW_20260922.md\nM\tdocs/V2_AI_INTEGRATION_ACCEPTANCE.md\nM\tdocs/V2_B_DATA_CONTRACT.md\nA\tdocs/evidence/c-119a10c-20260922/AI-compatibility.json\nA\tdocs/evidence/c-119a10c-20260922/checks.json\nA\tdocs/evidence/c-119a10c-20260922/cross-path-evidence-index.json\nA\tdocs/evidence/c-119a10c-20260922/mysql-acceptance.json\nA\tdocs/evidence/c-119a10c-20260922/runtime-mysql.json\nA\tdocs/evidence/c-119a10c-20260922/runtime-sqlite.json\nA\tdocs/evidence/c-119a10c-20260922/runtime_probe.py\nA\tdocs/evidence/c-119a10c-20260922/source-audit.json\nA\tdocs/evidence/c-119a10c-20260922/summary.json\nA\tdocs/evidence/c-bcbd559-20260922/904b5ad-docs-only-audit.json\nA\tdocs/evidence/c-bcbd559-20260922/AI-compatibility.json\nA\tdocs/evidence/c-bcbd559-20260922/B-cb2cfeb-comparison.json\nA\tdocs/evidence/c-bcbd559-20260922/B-cd2e706-doc-review.json\nA\tdocs/evidence/c-bcbd559-20260922/checks.json\nA\tdocs/evidence/c-bcbd559-20260922/coordination-0857.json\nA\tdocs/evidence/c-bcbd559-20260922/cross-path-evidence-index.json\nA\tdocs/evidence/c-bcbd559-20260922/history-dependency-probe.json\nA\tdocs/evidence/c-bcbd559-20260922/history_probe.py\nA\tdocs/evidence/c-bcbd559-20260922/mysql-acceptance.json\nA\tdocs/evidence/c-bcbd559-20260922/runtime-mysql.json\nA\tdocs/evidence/c-bcbd559-20260922/runtime-sqlite.json\nA\tdocs/evidence/c-bcbd559-20260922/runtime_probe.py\nA\tdocs/evidence/c-bcbd559-20260922/source-audit.json\nA\tdocs/evidence/c-bcbd559-20260922/summary.json\nA\tdocs/evidence/c-f465ee3-20260922/AI-compatibility.json\nA\tdocs/evidence/c-f465ee3-20260922/checks.json\nA\tdocs/evidence/c-f465ee3-20260922/cross-path-evidence-index.json\nA\tdocs/evidence/c-f465ee3-20260922/history-dependency-probe.json\nA\tdocs/evidence/c-f465ee3-20260922/history_probe.py\nA\tdocs/evidence/c-f465ee3-20260922/mysql-acceptance.json\nA\tdocs/evidence/c-f465ee3-20260922/runtime-mysql.json\nA\tdocs/evidence/c-f465ee3-20260922/runtime-sqlite.json\nA\tdocs/evidence/c-f465ee3-20260922/runtime_probe.py\nA\tdocs/evidence/c-f465ee3-20260922/source-audit.json\nA\tdocs/evidence/c-f465ee3-20260922/summary.json\nA\tdocs/evidence/c-warm-entry-20260922/result.json\nA\tdocs/evidence/c-warm-entry-20260922/warm_entry_probe.py\nA\tdocs/evidence/runtime-three-stock-20260922/README.md\nA\tdocs/evidence/runtime-three-stock-20260922/live-three-stock-851146e.json\nA\tdocs/evidence/runtime-three-stock-20260922/probe.py\nM\tscripts/warm_market_data.py\n",
+  "results": {
+    "D_original_reproduces_intraday_write": {
+      "expected_observation_confirmed": true,
+      "script_revision": "b506618e904b8b0edb09b5a06d0110c9392f493a",
+      "script_sha256": "e8e996fc230b264df57ca17bc77c3ff0a0fbd69cd76fdaaecf8d2384d43408a0",
+      "exit_code": 0,
+      "stored_rows": 100,
+      "last_stored_date": "2026-09-22",
+      "provider_calls": [
+        [
+          "2026-05-06",
+          "2026-09-22"
+        ]
+      ],
+      "source": "C-synthetic",
+      "stdout": "--- pass 1/1 (2026-05-06..2026-09-22)\n    {'stock_code': '600519', 'ok': True, 'rows': 100, 'window': ['2026-05-06', '2026-09-22'], 'mode': 'live', 'source': 'C-synthetic', 'seconds': 0.0}\n\nwarm-up summary:\n  600519: OK 100 rows\n"
+    },
+    "candidate_cold_cache_caps_at_completed_day": {
+      "expected_observation_confirmed": true,
+      "script_revision": "5fa91ea524a403b31cc5980480aeb7c25898479b",
+      "script_sha256": "9a985dd152ab98853d251d15adbcdecf7cc39701eec9cda41e11b2d90d000647",
+      "exit_code": 0,
+      "stored_rows": 99,
+      "last_stored_date": "2026-09-21",
+      "provider_calls": [
+        [
+          "2026-05-06",
+          "2026-09-21"
+        ]
+      ],
+      "source": "C-synthetic",
+      "stdout": "--- pass 1/1 (2026-05-06..2026-09-22)\n    {'stock_code': '600519', 'ok': True, 'rows': 99, 'window': ['2026-05-06', '2026-09-21'], 'mode': 'live', 'source': 'C-synthetic', 'seconds': 0.0}\n\nwarm-up summary:\n  600519: OK 99 rows\n"
+    },
+    "candidate_unknown_completed_day_rejects": {
+      "expected_observation_confirmed": true,
+      "script_revision": "5fa91ea524a403b31cc5980480aeb7c25898479b",
+      "script_sha256": "9a985dd152ab98853d251d15adbcdecf7cc39701eec9cda41e11b2d90d000647",
+      "exit_code": 1,
+      "stored_rows": 0,
+      "last_stored_date": null,
+      "provider_calls": [],
+      "source": null,
+      "stdout": "--- pass 1/1 (2026-05-06..2026-09-22)\n    {'stock_code': '600519', 'ok': False, 'error': 'StockDataProviderError: trading calendar cannot determine the latest completed daily bar', 'seconds': 0.0}\n\nwarm-up summary:\n  600519: FAILED\nfailed stocks: ['600519'] (source unavailable window; see docs/V2_B_DATA_EVIDENCE.md)\n"
+    },
+    "candidate_old_dirty_tail_is_replaced": {
+      "expected_observation_confirmed": true,
+      "script_revision": "5fa91ea524a403b31cc5980480aeb7c25898479b",
+      "script_sha256": "9a985dd152ab98853d251d15adbcdecf7cc39701eec9cda41e11b2d90d000647",
+      "exit_code": 0,
+      "stored_rows": 99,
+      "last_stored_date": "2026-09-21",
+      "provider_calls": [
+        [
+          "2026-05-06",
+          "2026-09-21"
+        ]
+      ],
+      "source": "C-synthetic",
+      "stdout": "--- pass 1/1 (2026-05-06..2026-09-22)\n    {'stock_code': '600519', 'ok': True, 'rows': 99, 'window': ['2026-05-06', '2026-09-21'], 'mode': 'live', 'source': 'C-synthetic', 'seconds': 0.0}\n\nwarm-up summary:\n  600519: OK 99 rows\n"
+    }
+  },
+  "all_expected_observations_confirmed": true
+}
