@@ -1,0 +1,43 @@
+vite v6.4.3 building for production...
+transforming...
+✓ 2311 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                   0.83 kB │ gzip:   0.53 kB
+dist/assets/space-grotesk-700-RjhwGPKo.woff2     12.84 kB
+dist/assets/space-grotesk-500-lFbtlQH6.woff2     13.31 kB
+dist/assets/ReturnCurveChart-BGOcIr0N.css         0.05 kB │ gzip:   0.07 kB
+dist/assets/NotFoundView-CRTDJLw-.css             0.11 kB │ gzip:   0.12 kB
+dist/assets/HomeView-DpjZ4UXp.css                 2.33 kB │ gzip:   0.89 kB
+dist/assets/AIReportHistoryView-D-0zoIhi.css      2.45 kB │ gzip:   0.80 kB
+dist/assets/BacktestCompareView-DTjsNWsA.css      2.66 kB │ gzip:   0.87 kB
+dist/assets/AIReportDetailView-D65OGU83.css       2.67 kB │ gzip:   0.77 kB
+dist/assets/AIReportBody--kmXEAN9.css             2.80 kB │ gzip:   0.80 kB
+dist/assets/NewsView-jlg0cF3M.css                 3.25 kB │ gzip:   1.01 kB
+dist/assets/BacktestHistoryView-SZgd-n2q.css      3.48 kB │ gzip:   0.97 kB
+dist/assets/BacktestDetailView-DpnugzR5.css       3.93 kB │ gzip:   1.01 kB
+dist/assets/StockDetailView-C9rkcGzQ.css         12.78 kB │ gzip:   2.76 kB
+dist/assets/index-C3sLNyX5.css                  376.32 kB │ gzip:  51.63 kB
+dist/assets/format-69lS8zZ6.js                    0.40 kB │ gzip:   0.33 kB
+dist/assets/NotFoundView-BtjjriVm.js              0.71 kB │ gzip:   0.54 kB
+dist/assets/HomeView-C1x0zQhG.js                  2.07 kB │ gzip:   1.29 kB
+dist/assets/AIReportBody-CrVsYrw8.js              2.27 kB │ gzip:   1.12 kB
+dist/assets/AIReportHistoryView-BoI0YeRk.js       3.37 kB │ gzip:   1.79 kB
+dist/assets/BacktestHistoryView-Dl74fBnQ.js       4.80 kB │ gzip:   2.32 kB
+dist/assets/ai-8TAhnJyV.js                        7.77 kB │ gzip:   3.20 kB
+dist/assets/NewsView-CZj-o24p.js                  8.29 kB │ gzip:   4.43 kB
+dist/assets/backtests-Dkj_Chax.js                 8.72 kB │ gzip:   2.43 kB
+dist/assets/BacktestDetailView-t7JFPaX6.js        9.45 kB │ gzip:   3.74 kB
+dist/assets/AIReportDetailView-lJjLi1L7.js        9.59 kB │ gzip:   4.02 kB
+dist/assets/install-BMS_4MMl.js                   9.64 kB │ gzip:   3.74 kB
+dist/assets/BacktestCompareView-Cvdw_K2w.js      11.64 kB │ gzip:   3.97 kB
+dist/assets/ReturnCurveChart-CqnrzxfH.js         71.94 kB │ gzip:  25.43 kB
+dist/assets/StockDetailView-utdsIlLi.js          80.54 kB │ gzip:  27.68 kB
+dist/assets/chartTheme-Ejwls6NR.js              418.28 kB │ gzip: 141.16 kB
+dist/assets/index-Ba-9fmga.js                 1,125.96 kB │ gzip: 372.77 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 12.37s

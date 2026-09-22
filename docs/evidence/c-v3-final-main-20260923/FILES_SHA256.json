@@ -1,0 +1,18 @@
+{
+  "scope": "Git index blob bytes; checkout CRLF conversion may change local bytes",
+  "files": {
+    "README.md": "fce74c7b97dca608f57305adcd0bb16bac0bc96955139ea0a699290719496bf5",
+    "ai-mysql.json": "aa83320108807a2fc62c76d51a4d84d13ea44f73b1f88042e88db1e3dc2418d2",
+    "backtest-mysql.json": "f4117a9b8576f94ee0a0c1f5032cc0315da00d508ba96742b821e092a7b3a2b8",
+    "frontend-build.txt": "a2fcdcbcb7068c60d7e177d7cafb26c74000879307bb2b955ea6ff6fdd43a6a3",
+    "frontend-typecheck.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "history-compat.json": "d6e6a82588144e600453be1b2004f295a366313803fc12e5a38081e3141034ac",
+    "macd-replay-record.json": "3fe089b4185398ace26834213bdb33cb6632377e51617b0d58d21aff39572b2f",
+    "mysql-databases.json": "6974c5a980e6a9a15207249fc78653d5c507ce59dddd7696cdb53da6ec2bae34",
+    "probe_ai_mysql.py": "ca0399215a9b74bd1dc9778a4f149178c877f96f3f5a8a9d117b388a32bc8be4",
+    "probe_backtest_mysql.py": "cb049c15c174afb51fb919aa5450f226998b73d2bf23ad6c769d0d7a93d7279b",
+    "pytest.txt": "4b06aba1c3934231c4e96f7e9db88403f56f369047b018497c8ae7c23ece4589",
+    "run_mysql_probes.py": "a2387f36eb90cc58e296ddcae44a950e13cbef20f20c5f4f495201f80a1aaee7",
+    "ui-export-test-report.md": "014ed48dcf5e11a8e7d9dcfde96c9559706ecd0a88321cb8d8b59d26acbc7004"
+  }
+}

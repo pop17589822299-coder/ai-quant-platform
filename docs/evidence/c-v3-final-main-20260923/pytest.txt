@@ -1,0 +1,22 @@
+........................................................................ [  9%]
+........................................................................ [ 19%]
+........................................................................ [ 28%]
+........................................................................ [ 38%]
+........................................................................ [ 47%]
+........................................................................ [ 57%]
+........................................................................ [ 67%]
+........................................................................ [ 76%]
+........................................................................ [ 86%]
+........................................................................ [ 95%]
+...s............................                                         [100%]
+============================== warnings summary ===============================
+..\ai-quant-platform-c-v1-regression\.venv\Lib\site-packages\starlette\testclient.py:37
+  C:\Users\15149\Desktop\qproject\ai-quant-platform-c-v1-regression\.venv\Lib\site-packages\starlette\testclient.py:37: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = typing.Callable[[], typing.ContextManager[anyio.abc.BlockingPortal]]
+
+tests/quant/test_v3_macd.py::test_no_lookahead_prefix_and_unused_earlier_data_do_not_change_result
+  C:\Users\15149\Desktop\qproject\ai-quant-platform-c-v1-regression\.venv\Lib\site-packages\pandas\core\internals\concat.py:510: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+    return dtype.type("NaT")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+751 passed, 1 skipped, 2 warnings in 37.55s

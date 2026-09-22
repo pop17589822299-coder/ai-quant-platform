@@ -1,0 +1,188 @@
+{
+  "d_sha": "a6c939351579076ce65b0fec6573bf72cb3cfcd9",
+  "scope": "Final merged main; fixed Tencent qfq sample; real isolated MySQL; fixture LLM; no live Provider or real LLM",
+  "matrix": [
+    {
+      "stock_code": "600519",
+      "parameters": "default",
+      "raw_numeric_mapping_exact": true,
+      "normalized_prompt_post_saved_get_equal": true,
+      "independent_context_hash": "988cc295dc0582622813e012cdcd5e808c8462696ec2cea59a8eb5586bf74b46",
+      "c_input_hash": "0fa1aa408689f559a12c37afe6c726c01be0e80b3a70d07363c59ec86e465153",
+      "new_engine_session": true,
+      "curve_points": 283
+    },
+    {
+      "stock_code": "600519",
+      "parameters": "10_30",
+      "raw_numeric_mapping_exact": true,
+      "normalized_prompt_post_saved_get_equal": true,
+      "independent_context_hash": "f48e050990d5eec4707bfc7516288b54a065519f51068e04b5edec1e9cd95a74",
+      "c_input_hash": "9ab75c3158920dd2fe73b29ada28d367c333c9dde66e26e2025941418bfa989d",
+      "new_engine_session": true,
+      "curve_points": 283
+    },
+    {
+      "stock_code": "600519",
+      "parameters": "20_60_cost",
+      "raw_numeric_mapping_exact": true,
+      "normalized_prompt_post_saved_get_equal": true,
+      "independent_context_hash": "7f61cec083896e02dd96be3cdb04e05d43220975308a516d33708654bd9b9c16",
+      "c_input_hash": "97e7e76a66dadda99ebe307dfb72a6a3c5e39ed81e8c5fa9cb88c20c8c1fb888",
+      "new_engine_session": true,
+      "curve_points": 283
+    },
+    {
+      "stock_code": "000001",
+      "parameters": "default",
+      "raw_numeric_mapping_exact": true,
+      "normalized_prompt_post_saved_get_equal": true,
+      "independent_context_hash": "f04e92cc1ea917228226c85f6ae60aba86690dd367074cc33834ece438e3502d",
+      "c_input_hash": "6f3b5ec3699fa71c8fef97c5131aea893cc4b1e1ec963b892db5dffb371444d3",
+      "new_engine_session": true,
+      "curve_points": 283
+    },
+    {
+      "stock_code": "000001",
+      "parameters": "10_30",
+      "raw_numeric_mapping_exact": true,
+      "normalized_prompt_post_saved_get_equal": true,
+      "independent_context_hash": "d9b99e2e018d2d67920a8831f217386c45644c98ab1d6807923ea1db035695e2",
+      "c_input_hash": "8f00d96ee1e9f6395ab9dcc22e084d98ebf5abe606bdf2ff83bf01f94e00ea73",
+      "new_engine_session": true,
+      "curve_points": 283
+    },
+    {
+      "stock_code": "000001",
+      "parameters": "20_60_cost",
+      "raw_numeric_mapping_exact": true,
+      "normalized_prompt_post_saved_get_equal": true,
+      "independent_context_hash": "7089c416e8d4ee8e7f1e9b464b40fb0e5567109e89806d9152945579d0294834",
+      "c_input_hash": "51d7fdc9e326a3156b8a78ae7052b5b0cc9781dd322270116ed9f311a289d9e8",
+      "new_engine_session": true,
+      "curve_points": 283
+    },
+    {
+      "stock_code": "300750",
+      "parameters": "default",
+      "raw_numeric_mapping_exact": true,
+      "normalized_prompt_post_saved_get_equal": true,
+      "independent_context_hash": "5982dad6115a91ccf3a4f2fe804da2728f34b95e836da44b9513dd887ebb4736",
+      "c_input_hash": "fc03a520077a4632c771c767984dbcfff35ceaac8a35d7c10e635940ee0a981a",
+      "new_engine_session": true,
+      "curve_points": 283
+    },
+    {
+      "stock_code": "300750",
+      "parameters": "10_30",
+      "raw_numeric_mapping_exact": true,
+      "normalized_prompt_post_saved_get_equal": true,
+      "independent_context_hash": "b2ac807e9cec34265f8a3a22c5b3c9a576b08229604e60ba56ba9b46ed467ecf",
+      "c_input_hash": "409f040e25a58fd8eb610f8af2bad69137b82a32088bb5747045bfdf787205e0",
+      "new_engine_session": true,
+      "curve_points": 283
+    },
+    {
+      "stock_code": "300750",
+      "parameters": "20_60_cost",
+      "raw_numeric_mapping_exact": true,
+      "normalized_prompt_post_saved_get_equal": true,
+      "independent_context_hash": "94a19f1d323b24a1a45ead05a479d8f125a389cfc42a635f21d2de8925cd74c3",
+      "c_input_hash": "d74df6e804446ebf97cf34d155893b8abb259dd92faa4cfa524d9c8e1545be5d",
+      "new_engine_session": true,
+      "curve_points": 283
+    }
+  ],
+  "corruption_probes": [
+    {
+      "field": "total_return",
+      "original": 0.25458314506235635,
+      "replacement": 0.99,
+      "http_status": 500,
+      "code": 50002,
+      "response_body": {
+        "code": 50002,
+        "message": "database error",
+        "data": null
+      },
+      "provider_exception_type": "DatabaseOperationError",
+      "llm_calls": 0,
+      "reports_saved": 0,
+      "expected": "500/50002, zero LLM calls and zero saved reports",
+      "initial_cash": 200000.0,
+      "final_equity": 250916.62901247127,
+      "order_count": 5
+    },
+    {
+      "field": "max_drawdown",
+      "original": -0.2385075991954868,
+      "replacement": -0.5,
+      "http_status": 500,
+      "code": 50002,
+      "response_body": {
+        "code": 50002,
+        "message": "database error",
+        "data": null
+      },
+      "provider_exception_type": "DatabaseOperationError",
+      "llm_calls": 0,
+      "reports_saved": 0,
+      "expected": "500/50002, zero LLM calls and zero saved reports",
+      "initial_cash": 200000.0,
+      "final_equity": 250916.62901247127,
+      "order_count": 5
+    },
+    {
+      "field": "trade_count",
+      "original": 2,
+      "replacement": 999,
+      "http_status": 500,
+      "code": 50002,
+      "response_body": {
+        "code": 50002,
+        "message": "database error",
+        "data": null
+      },
+      "provider_exception_type": "DatabaseOperationError",
+      "llm_calls": 0,
+      "reports_saved": 0,
+      "expected": "500/50002, zero LLM calls and zero saved reports",
+      "initial_cash": 200000.0,
+      "final_equity": 250916.62901247127,
+      "order_count": 5
+    },
+    {
+      "field": "initial_cash",
+      "original": 200000.0,
+      "replacement": 0.0,
+      "http_status": 500,
+      "code": 50002,
+      "response_body": {
+        "code": 50002,
+        "message": "database error",
+        "data": null
+      },
+      "provider_exception_type": "DatabaseOperationError",
+      "llm_calls": 0,
+      "reports_saved": 0,
+      "expected": "500/50002, zero LLM calls and zero saved reports",
+      "initial_cash": 200000.0,
+      "final_equity": 250916.62901247127,
+      "order_count": 5
+    }
+  ],
+  "source_files_sha256": {
+    "600519_qfq_normalized_20241201_20260916.json": "280eed0f779440425bf79c5c368eebc07e1abc906dba7b2ad44afdd41f95cd27",
+    "000001_qfq_normalized_20241201_20260916.json": "d4fc99555e4a5283ab36408ef6063873e2a05e55e5a350826c3c56a3ac95aa73",
+    "300750_qfq_normalized_20241201_20260916.json": "b25d6e31442cdaeb37243d818b6171d69f2aad248e3f073e9500ebfcc1daf0df"
+  },
+  "c_code_sha": "6a84901c82256b7d48dfab3ebee3208633e5058c",
+  "macd_out_of_f4_scope": {
+    "http_status": 422,
+    "code": 40007,
+    "llm_calls": 0
+  },
+  "status": "passed",
+  "tested_sha": "a6c939351579076ce65b0fec6573bf72cb3cfcd9",
+  "database": "ai_quant_c_v3_20260922_235727_ai"
+}

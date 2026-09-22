@@ -1,0 +1,8 @@
+{
+  "tested_sha": "a6c939351579076ce65b0fec6573bf72cb3cfcd9",
+  "databases": [
+    "ai_quant_c_v3_20260922_235720_backtest",
+    "ai_quant_c_v3_20260922_235727_ai"
+  ],
+  "mode": "fixed Tencent qfq sample / real isolated MySQL / fixture LLM"
+}
