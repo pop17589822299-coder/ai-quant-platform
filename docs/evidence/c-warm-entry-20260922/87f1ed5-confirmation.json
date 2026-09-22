@@ -1,0 +1,20 @@
+{
+  "checked_date": "2026-09-22",
+  "D_head": "87f1ed5b47adfab63b913d1d098a1b9171291287",
+  "previous_D_head": "b506618e904b8b0edb09b5a06d0110c9392f493a",
+  "diff": "Only docs/V2_AI_INTEGRATION_ACCEPTANCE.md: 8 lines added",
+  "tested_core": "bcbd559acb67d3435fe7a840f34ad73bbe35bbad",
+  "backend_frontend_scripts_tests_and_fixed_package_unchanged": true,
+  "D_warm_script_blob": "4397bbd44ed11b64f1bda3930fbb048856098942",
+  "B_a89c2ea_warm_script_blob": "b7b46c52922cf47ef985a662f6ed7ae4ed84dc1b",
+  "warm_fix_integrated": false,
+  "PR10_actual_state": "open, draft, not merged",
+  "PR10_body_stale_SHA": "851146e6a810a37f728a233a839ccd617aa4ee77",
+  "new_issue_comments_since_previous_C_reply": false,
+  "inline_review_threads": [],
+  "C_latest_formal_review_before_this_confirmation": "COMMENTED; not APPROVED",
+  "D_reported_user_acceptance": "passed; user acceptance substitutes A candidate mock-off page check; not independently executed by C",
+  "D_planned_merge_order": "PR10 then PR12 and PR14; PR13 later",
+  "new_tests_executed": false,
+  "reason": "Production and fixed inputs unchanged; previous C evidence retained within its scope. Warm CLI remains pending integration."
+}
