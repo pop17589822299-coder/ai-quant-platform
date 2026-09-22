@@ -1,0 +1,30 @@
+[
+  {
+    "endpoint": "info",
+    "route": "system_proxy",
+    "http_status": 502,
+    "valid_json": false,
+    "seconds": 2.515
+  },
+  {
+    "endpoint": "catalog_page1",
+    "route": "system_proxy",
+    "http_status": 502,
+    "valid_json": false,
+    "seconds": 3.031
+  },
+  {
+    "endpoint": "info",
+    "route": "direct",
+    "http_status": 502,
+    "valid_json": false,
+    "seconds": 2.672
+  },
+  {
+    "endpoint": "catalog_page1",
+    "route": "direct",
+    "http_status": 502,
+    "valid_json": false,
+    "seconds": 2.359
+  }
+]

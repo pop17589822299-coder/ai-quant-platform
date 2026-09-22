@@ -1,0 +1,74 @@
+[
+  {
+    "market": "SSE",
+    "ok": true,
+    "rows": 1702,
+    "columns": [
+      "证券代码",
+      "证券简称",
+      "证券全称",
+      "公司简称",
+      "公司全称",
+      "上市日期"
+    ],
+    "examples": [
+      {
+        "证券代码": "600000",
+        "证券简称": "浦发银行",
+        "证券全称": "浦发银行",
+        "公司简称": "浦发银行",
+        "公司全称": "上海浦东发展银行股份有限公司",
+        "上市日期": "1999-11-10"
+      },
+      {
+        "证券代码": "600004",
+        "证券简称": "白云机场",
+        "证券全称": "白云机场",
+        "公司简称": "白云机场",
+        "公司全称": "广州白云国际机场股份有限公司",
+        "上市日期": "2003-04-28"
+      }
+    ]
+  },
+  {
+    "market": "STAR",
+    "ok": true,
+    "rows": 618,
+    "columns": [
+      "证券代码",
+      "证券简称",
+      "证券全称",
+      "公司简称",
+      "公司全称",
+      "上市日期"
+    ],
+    "examples": [
+      {
+        "证券代码": "688001",
+        "证券简称": "华兴源创",
+        "证券全称": "苏州华兴源创科技",
+        "公司简称": "华兴源创",
+        "公司全称": "苏州华兴源创科技股份有限公司",
+        "上市日期": "2019-07-22"
+      },
+      {
+        "证券代码": "688002",
+        "证券简称": "睿创微纳",
+        "证券全称": "睿创微纳",
+        "公司简称": "睿创微纳",
+        "公司全称": "烟台睿创微纳技术股份有限公司",
+        "上市日期": "2019-07-22"
+      }
+    ]
+  },
+  {
+    "market": "SZSE",
+    "ok": false,
+    "error": "Users\\15149\\Desktop\\qproject\\ai-quant-platform-c-v1-regression\\.venv\\Lib\\site-packages\\requests\\adapters.py\", line 727, in send\r\n    raise SSLError(e, request=request)\r\nrequests.exceptions.SSLError: HTTPSConnectionPool(host='www.szse.cn', port=443): Max retries exceeded with url: /api/report/ShowReport?SHOWTYPE=xlsx&CATALOGID=1110&TABKEY=tab1&random=0.6935816432433362 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))\r\n"
+  },
+  {
+    "market": "BSE",
+    "ok": false,
+    "error": "25s bounded timeout; child terminated"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "proxy_keys": [
+    "http",
+    "https",
+    "ftp"
+  ],
+  "env_proxy_keys": [],
+  "original_database_catalog": {
+    "rows": 1
+  },
+  "stock_info": {
+    "passed": false,
+    "type": "StockDataProviderError",
+    "reason": "AKShare info request failed for 600519: AKShare call exceeded 1.2s (delayed-host fallback also failed: HTTP 502)",
+    "seconds": 7.89
+  },
+  "news": {
+    "passed": true,
+    "size": 2,
+    "seconds": 1.12
+  }
+}

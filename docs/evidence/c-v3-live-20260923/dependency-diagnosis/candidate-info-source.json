@@ -1,0 +1,56 @@
+[
+  {
+    "code": "600519",
+    "node_keys": [
+      "qfqday",
+      "qt",
+      "mx_price",
+      "prec",
+      "version"
+    ],
+    "quote_prefix": [
+      "1",
+      "贵州茅台",
+      "600519",
+      "1253.80"
+    ],
+    "name": "贵州茅台",
+    "returned_code": "600519"
+  },
+  {
+    "code": "300750",
+    "node_keys": [
+      "qfqday",
+      "qt",
+      "mx_price",
+      "prec",
+      "version"
+    ],
+    "quote_prefix": [
+      "51",
+      "宁德时代",
+      "300750",
+      "304.63"
+    ],
+    "name": "宁德时代",
+    "returned_code": "300750"
+  },
+  {
+    "code": "000001",
+    "node_keys": [
+      "qfqday",
+      "qt",
+      "mx_price",
+      "prec",
+      "version"
+    ],
+    "quote_prefix": [
+      "51",
+      "平安银行",
+      "000001",
+      "11.71"
+    ],
+    "name": "平安银行",
+    "returned_code": "000001"
+  }
+]
