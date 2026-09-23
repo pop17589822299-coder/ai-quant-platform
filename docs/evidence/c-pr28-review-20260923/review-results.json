@@ -1,0 +1,45 @@
+{
+  "sqlite": {
+    "unchanged_refresh_base_passed": true,
+    "base_rename_failed": true,
+    "base_failure_rolled_back_new_insert": true,
+    "head_mixed_insert_rename_unchanged_passed": true,
+    "head_repeat_idempotent": true,
+    "fresh_connection_names_match": true
+  },
+  "mysql": {
+    "database": "ai_quant_c_pr28_review_20260923_030525_310560",
+    "unchanged_refresh_base_passed": true,
+    "base_rename_failed": true,
+    "base_failure_rolled_back_new_insert": true,
+    "head_mixed_insert_rename_unchanged_passed": true,
+    "head_repeat_idempotent": true,
+    "fresh_connection_names_match": true
+  },
+  "serial_timeout_reproduction": {
+    "sequential_caller": true,
+    "calls": [
+      {
+        "serial_call": 1,
+        "error": "AKShare call exceeded 0.0s"
+      },
+      {
+        "serial_call": 2,
+        "error": "AKShare call exceeded 0.0s"
+      },
+      {
+        "serial_call": 3,
+        "error": "AKShare call exceeded 0.0s"
+      },
+      {
+        "serial_call": 4,
+        "error": "AKShare call exceeded 0.0s"
+      },
+      {
+        "serial_call": 5,
+        "error": "too many in-flight AKShare calls"
+      }
+    ],
+    "independent_test_process": true
+  }
+}
