@@ -1,0 +1,24 @@
+{
+  "search_after_failed_refresh_http": 200,
+  "search_body": {
+    "code": 0,
+    "message": "success",
+    "data": [
+      {
+        "stock_code": "600519",
+        "stock_name": "贵州茅台",
+        "industry": null,
+        "total_market_cap": null,
+        "float_market_cap": null
+      }
+    ]
+  },
+  "catalog": {
+    "synced": true,
+    "row_count": 5566,
+    "last_success_at": "2026-09-23T00:53:54Z",
+    "last_attempt_at": "2026-09-23T01:33:00Z",
+    "source": "sina.Market_Center.getHQNodeData",
+    "last_error": "stock catalog unavailable (primary: TimeoutError: AKShare call exceeded 0.5s; delayed host: StockDataProviderError: delayed host catalog HTTP 502; sina: StockDataProviderError: sina catalog page 17 failed after retries: HTTPConnectionPool(host='127.0.0.1', port=10800): Read timed out. (read timeout=3.0))"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "old_id": 12,
+  "new_id": 26,
+  "input_diff_count": 1980,
+  "examples": [
+    {
+      "date": "2025-06-06",
+      "field": "open",
+      "old": 1434.219,
+      "new": 1434.22
+    },
+    {
+      "date": "2025-06-06",
+      "field": "high",
+      "old": 1439.389,
+      "new": 1439.39
+    },
+    {
+      "date": "2025-06-06",
+      "field": "low",
+      "old": 1423.419,
+      "new": 1423.42
+    },
+    {
+      "date": "2025-06-06",
+      "field": "close",
+      "old": 1426.809,
+      "new": 1426.81
+    },
+    {
+      "date": "2025-06-06",
+      "field": "amount",
+      "old": null,
+      "new": 3777727616.0
+    },
+    {
+      "date": "2025-06-06",
+      "field": "turnover_rate",
+      "old": null,
+      "new": 0.002
+    },
+    {
+      "date": "2025-06-06",
+      "field": "change_pct",
+      "old": -0.005305,
+      "new": -0.0053
+    },
+    {
+      "date": "2025-06-09",
+      "field": "open",
+      "old": 1425.439,
+      "new": 1425.44
+    }
+  ],
+  "return_delta": 3.5729588543365054e-07
+}

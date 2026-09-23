@@ -1,0 +1,38 @@
+[
+  {
+    "stock": "600519_kline",
+    "source": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get",
+    "samples": 2,
+    "equal": true
+  },
+  {
+    "stock": "000001_kline",
+    "source": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get",
+    "samples": 1,
+    "equal": true
+  },
+  {
+    "stock": "300750_kline",
+    "source": "akshare.stock_zh_a_hist",
+    "samples": 2,
+    "equal": true
+  },
+  {
+    "stock": "600519_kline",
+    "source": "akshare.stock_zh_a_hist",
+    "samples": 1,
+    "equal": true
+  },
+  {
+    "stock": "000001_kline",
+    "source": "akshare.stock_zh_a_hist",
+    "samples": 1,
+    "equal": true
+  },
+  {
+    "stock": "300750_kline",
+    "source": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get",
+    "samples": 1,
+    "equal": true
+  }
+]

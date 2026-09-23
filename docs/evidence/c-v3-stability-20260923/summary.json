@@ -1,0 +1,103 @@
+{
+  "upstream": {
+    "passed": 22,
+    "total": 27,
+    "median_seconds": 4.016,
+    "p95_seconds": 11.094,
+    "max_seconds": 11.156,
+    "over_10_seconds": 3
+  },
+  "api": {
+    "passed": 48,
+    "total": 48,
+    "median_seconds": 0.031,
+    "p95_seconds": 9.344,
+    "max_seconds": 9.562,
+    "over_10_seconds": 0
+  },
+  "integration": {
+    "passed": 0,
+    "total": 2,
+    "median_seconds": 22.148500000000002,
+    "p95_seconds": 33.218,
+    "max_seconds": 33.218,
+    "over_10_seconds": 2
+  },
+  "bar_hash_stable": {
+    "600519": false,
+    "000001": false,
+    "300750": false
+  },
+  "failures": [
+    {
+      "label": "600519_news",
+      "round": 2,
+      "kind": "upstream",
+      "at": "2026-09-23T01:30:05.997457+00:00",
+      "ok": false,
+      "error_type": "StockDataProviderError",
+      "error": "AKShare news request failed for 600519: AKShare call exceeded 0.5s",
+      "seconds": 4.016
+    },
+    {
+      "label": "600519_info",
+      "round": 3,
+      "kind": "upstream",
+      "at": "2026-09-23T01:31:24.313423+00:00",
+      "ok": false,
+      "error_type": "StockDataProviderError",
+      "error": "AKShare info request failed for 600519: AKShare info request failed for 600519: AKShare call exceeded 0.5s (delayed-host fallback also failed: ReadTimeout: HTTPSConnectionPool(host='push2delay.eastmoney.com', port=443): Read timed out. (read timeout=3.0)) (Tencent quote fallback also failed: ReadTimeout: HTTPSConnectionPool(host='qt.gtimg.cn', port=443): Read timed out. (read timeout=3.0))",
+      "seconds": 11.156
+    },
+    {
+      "label": "000001_info",
+      "round": 3,
+      "kind": "upstream",
+      "at": "2026-09-23T01:31:54.689656+00:00",
+      "ok": false,
+      "error_type": "StockDataProviderError",
+      "error": "AKShare info request failed for 000001: AKShare info request failed for 000001: AKShare call exceeded 0.5s (delayed-host fallback also failed: ReadTimeout: HTTPSConnectionPool(host='push2delay.eastmoney.com', port=443): Read timed out. (read timeout=3.0)) (Tencent quote fallback also failed: ReadTimeout: HTTPSConnectionPool(host='qt.gtimg.cn', port=443): Read timed out. (read timeout=3.0))",
+      "seconds": 11.078
+    },
+    {
+      "label": "000001_kline",
+      "round": 3,
+      "kind": "upstream",
+      "at": "2026-09-23T01:32:05.774180+00:00",
+      "ok": false,
+      "error_type": "StockDataProviderError",
+      "error": "AKShare request failed for 000001: AKShare call exceeded 0.5s (Tencent qfq fallback also failed: ReadTimeout: HTTPSConnectionPool(host='web.ifzq.gtimg.cn', port=443): Read timed out. (read timeout=3.0))",
+      "seconds": 11.094
+    },
+    {
+      "label": "300750_news",
+      "round": 3,
+      "kind": "upstream",
+      "at": "2026-09-23T01:32:43.329738+00:00",
+      "ok": false,
+      "error_type": "StockDataProviderError",
+      "error": "AKShare news request failed for 300750: too many in-flight AKShare calls",
+      "seconds": 1.5
+    },
+    {
+      "label": "catalog_sync",
+      "round": 4,
+      "kind": "integration",
+      "at": "2026-09-23T01:33:00.404375+00:00",
+      "ok": false,
+      "error_type": "RuntimeError",
+      "error": "HTTP 502; {'code': 50001, 'message': 'data provider error', 'data': None}",
+      "seconds": 33.218
+    },
+    {
+      "label": "default_ai",
+      "round": 4,
+      "kind": "integration",
+      "at": "2026-09-23T01:33:33.622389+00:00",
+      "ok": false,
+      "error_type": "RuntimeError",
+      "error": "HTTP 502; {'code': 50001, 'message': 'data provider error', 'data': None}",
+      "seconds": 11.079
+    }
+  ]
+}

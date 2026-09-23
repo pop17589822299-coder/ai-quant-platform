@@ -1,0 +1,77 @@
+{"label": "600519_info", "round": 1, "kind": "upstream", "at": "2026-09-23T01:28:22.659381+00:00", "name": "贵州茅台", "industry_missing": true, "ok": true, "seconds": 9.14}
+{"label": "600519_kline", "round": 1, "kind": "upstream", "at": "2026-09-23T01:28:31.799929+00:00", "rows": 16, "first_date": "2026-09-01", "last_date": "2026-09-22", "source": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get", "sha256": "6520174620c186ab7704b63d07db98ee5465f07c01c174d86f5b0401fe13ef8b", "ok": true, "seconds": 6.078}
+{"label": "600519_news", "round": 1, "kind": "upstream", "at": "2026-09-23T01:28:37.885763+00:00", "rows": 3, "empty": false, "ok": true, "seconds": 1.172}
+{"label": "600519/info", "round": 1, "kind": "api", "at": "2026-09-23T01:28:39.058857+00:00", "http": 200, "rows": null, "ok": true, "seconds": 6.219}
+{"label": "600519/kline?start_date=2026-09-01&end_date=2026-09-22", "round": 1, "kind": "api", "at": "2026-09-23T01:28:45.283645+00:00", "http": 200, "rows": 344, "ok": true, "seconds": 1.781}
+{"label": "600519/score", "round": 1, "kind": "api", "at": "2026-09-23T01:28:47.073043+00:00", "http": 200, "rows": null, "ok": true, "seconds": 0.031}
+{"label": "600519_search", "round": 1, "kind": "api", "at": "2026-09-23T01:28:47.105050+00:00", "http": 200, "rows": 1, "ok": true, "seconds": 0.0}
+{"label": "000001_info", "round": 1, "kind": "upstream", "at": "2026-09-23T01:28:47.114053+00:00", "name": "平安银行", "industry_missing": true, "ok": true, "seconds": 8.719}
+{"label": "000001_kline", "round": 1, "kind": "upstream", "at": "2026-09-23T01:28:55.826608+00:00", "rows": 16, "first_date": "2026-09-01", "last_date": "2026-09-22", "source": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get", "sha256": "6fc211f3cfd7cff1f23ea4929b53fa8d3812ce45b3f4be02e6b1d0120494e62c", "ok": true, "seconds": 5.89}
+{"label": "000001_news", "round": 1, "kind": "upstream", "at": "2026-09-23T01:29:01.726307+00:00", "rows": 3, "empty": false, "ok": true, "seconds": 0.922}
+{"label": "000001/info", "round": 1, "kind": "api", "at": "2026-09-23T01:29:02.638268+00:00", "http": 200, "rows": null, "ok": true, "seconds": 6.344}
+{"label": "000001/kline?start_date=2026-09-01&end_date=2026-09-22", "round": 1, "kind": "api", "at": "2026-09-23T01:29:08.981013+00:00", "http": 200, "rows": 344, "ok": true, "seconds": 5.969}
+{"label": "000001/score", "round": 1, "kind": "api", "at": "2026-09-23T01:29:14.959056+00:00", "http": 200, "rows": null, "ok": true, "seconds": 0.031}
+{"label": "000001_search", "round": 1, "kind": "api", "at": "2026-09-23T01:29:14.989587+00:00", "http": 200, "rows": 1, "ok": true, "seconds": 0.015}
+{"label": "300750_info", "round": 1, "kind": "upstream", "at": "2026-09-23T01:29:14.998592+00:00", "name": "宁德时代", "industry_missing": true, "ok": true, "seconds": 8.625}
+{"label": "300750_kline", "round": 1, "kind": "upstream", "at": "2026-09-23T01:29:23.624867+00:00", "rows": 16, "first_date": "2026-09-01", "last_date": "2026-09-22", "source": "akshare.stock_zh_a_hist", "sha256": "58cf4d400789a75ad6528531f072264e58e9f11a831ffc081356736357a531df", "ok": true, "seconds": 3.579}
+{"label": "300750_news", "round": 1, "kind": "upstream", "at": "2026-09-23T01:29:27.201088+00:00", "rows": 3, "empty": false, "ok": true, "seconds": 1.0}
+{"label": "300750/info", "round": 1, "kind": "api", "at": "2026-09-23T01:29:28.212255+00:00", "http": 200, "rows": null, "ok": true, "seconds": 8.828}
+{"label": "300750/kline?start_date=2026-09-01&end_date=2026-09-22", "round": 1, "kind": "api", "at": "2026-09-23T01:29:37.032636+00:00", "http": 200, "rows": 344, "ok": true, "seconds": 6.0}
+{"label": "300750/score", "round": 1, "kind": "api", "at": "2026-09-23T01:29:43.033911+00:00", "http": 200, "rows": null, "ok": true, "seconds": 0.031}
+{"label": "300750_search", "round": 1, "kind": "api", "at": "2026-09-23T01:29:43.064918+00:00", "http": 200, "rows": 1, "ok": true, "seconds": 0.0}
+{"label": "name_search", "round": 1, "kind": "api", "at": "2026-09-23T01:29:43.072920+00:00", "http": 200, "rows": 1, "ok": true, "seconds": 0.0}
+{"label": "health", "round": 1, "kind": "api", "at": "2026-09-23T01:29:43.081210+00:00", "http": 200, "rows": null, "ok": true, "seconds": 0.0}
+{"label": "history", "round": 1, "kind": "api", "at": "2026-09-23T01:29:43.084211+00:00", "http": 200, "rows": null, "ok": true, "seconds": 0.015}
+{"label": "report_history", "round": 1, "kind": "api", "at": "2026-09-23T01:29:43.098214+00:00", "http": 200, "rows": null, "ok": true, "seconds": 0.016}
+{"label": "600519_info", "round": 2, "kind": "upstream", "at": "2026-09-23T01:29:58.105992+00:00", "name": "贵州茅台", "industry_missing": false, "ok": true, "seconds": 6.219}
+{"label": "600519_kline", "round": 2, "kind": "upstream", "at": "2026-09-23T01:30:04.329033+00:00", "rows": 16, "first_date": "2026-09-01", "last_date": "2026-09-22", "source": "akshare.stock_zh_a_hist", "sha256": "d0bd5292ddffe8329206479b4e07c61fc36efa965f25135818f688340dd1452a", "ok": true, "seconds": 1.671}
+{"label": "600519_news", "round": 2, "kind": "upstream", "at": "2026-09-23T01:30:05.997457+00:00", "ok": false, "error_type": "StockDataProviderError", "error": "AKShare news request failed for 600519: AKShare call exceeded 0.5s", "seconds": 4.016}
+{"label": "600519/info", "round": 2, "kind": "api", "at": "2026-09-23T01:30:10.017284+00:00", "http": 200, "rows": null, "ok": true, "seconds": 7.953}
+{"label": "600519/kline?start_date=2026-09-01&end_date=2026-09-22", "round": 2, "kind": "api", "at": "2026-09-23T01:30:17.972596+00:00", "http": 200, "rows": 344, "ok": true, "seconds": 5.985}
+{"label": "600519/score", "round": 2, "kind": "api", "at": "2026-09-23T01:30:23.956747+00:00", "http": 200, "rows": null, "ok": true, "seconds": 0.031}
+{"label": "600519_search", "round": 2, "kind": "api", "at": "2026-09-23T01:30:23.992755+00:00", "http": 200, "rows": 1, "ok": true, "seconds": 0.015}
+{"label": "000001_info", "round": 2, "kind": "upstream", "at": "2026-09-23T01:30:24.001758+00:00", "name": "平安银行", "industry_missing": false, "ok": true, "seconds": 6.782}
+{"label": "000001_kline", "round": 2, "kind": "upstream", "at": "2026-09-23T01:30:30.784406+00:00", "rows": 16, "first_date": "2026-09-01", "last_date": "2026-09-22", "source": "akshare.stock_zh_a_hist", "sha256": "3c0a1af26fcf82f409609a5c0a7adb8ed891a7494d8ade4cb2e4e93de0b9c7a0", "ok": true, "seconds": 1.734}
+{"label": "000001_news", "round": 2, "kind": "upstream", "at": "2026-09-23T01:30:32.515610+00:00", "rows": 3, "empty": false, "ok": true, "seconds": 0.953}
+{"label": "000001/info", "round": 2, "kind": "api", "at": "2026-09-23T01:30:33.478340+00:00", "http": 200, "rows": null, "ok": true, "seconds": 8.188}
+{"label": "000001/kline?start_date=2026-09-01&end_date=2026-09-22", "round": 2, "kind": "api", "at": "2026-09-23T01:30:41.652608+00:00", "http": 200, "rows": 344, "ok": true, "seconds": 5.953}
+{"label": "000001/score", "round": 2, "kind": "api", "at": "2026-09-23T01:30:47.617232+00:00", "http": 200, "rows": null, "ok": true, "seconds": 0.031}
+{"label": "000001_search", "round": 2, "kind": "api", "at": "2026-09-23T01:30:47.650672+00:00", "http": 200, "rows": 1, "ok": true, "seconds": 0.0}
+{"label": "300750_info", "round": 2, "kind": "upstream", "at": "2026-09-23T01:30:47.658674+00:00", "name": "宁德时代", "industry_missing": false, "ok": true, "seconds": 6.187}
+{"label": "300750_kline", "round": 2, "kind": "upstream", "at": "2026-09-23T01:30:53.854049+00:00", "rows": 16, "first_date": "2026-09-01", "last_date": "2026-09-22", "source": "akshare.stock_zh_a_hist", "sha256": "58cf4d400789a75ad6528531f072264e58e9f11a831ffc081356736357a531df", "ok": true, "seconds": 1.609}
+{"label": "300750_news", "round": 2, "kind": "upstream", "at": "2026-09-23T01:30:55.465861+00:00", "rows": 3, "empty": false, "ok": true, "seconds": 1.281}
+{"label": "300750/info", "round": 2, "kind": "api", "at": "2026-09-23T01:30:56.755062+00:00", "http": 200, "rows": null, "ok": true, "seconds": 6.329}
+{"label": "300750/kline?start_date=2026-09-01&end_date=2026-09-22", "round": 2, "kind": "api", "at": "2026-09-23T01:31:03.086500+00:00", "http": 200, "rows": 344, "ok": true, "seconds": 6.156}
+{"label": "300750/score", "round": 2, "kind": "api", "at": "2026-09-23T01:31:09.243033+00:00", "http": 200, "rows": null, "ok": true, "seconds": 0.031}
+{"label": "300750_search", "round": 2, "kind": "api", "at": "2026-09-23T01:31:09.273548+00:00", "http": 200, "rows": 1, "ok": true, "seconds": 0.016}
+{"label": "name_search", "round": 2, "kind": "api", "at": "2026-09-23T01:31:09.282550+00:00", "http": 200, "rows": 1, "ok": true, "seconds": 0.0}
+{"label": "health", "round": 2, "kind": "api", "at": "2026-09-23T01:31:09.290552+00:00", "http": 200, "rows": null, "ok": true, "seconds": 0.015}
+{"label": "history", "round": 2, "kind": "api", "at": "2026-09-23T01:31:09.294553+00:00", "http": 200, "rows": null, "ok": true, "seconds": 0.0}
+{"label": "report_history", "round": 2, "kind": "api", "at": "2026-09-23T01:31:09.306555+00:00", "http": 200, "rows": null, "ok": true, "seconds": 0.016}
+{"label": "600519_info", "round": 3, "kind": "upstream", "at": "2026-09-23T01:31:24.313423+00:00", "ok": false, "error_type": "StockDataProviderError", "error": "AKShare info request failed for 600519: AKShare info request failed for 600519: AKShare call exceeded 0.5s (delayed-host fallback also failed: ReadTimeout: HTTPSConnectionPool(host='push2delay.eastmoney.com', port=443): Read timed out. (read timeout=3.0)) (Tencent quote fallback also failed: ReadTimeout: HTTPSConnectionPool(host='qt.gtimg.cn', port=443): Read timed out. (read timeout=3.0))", "seconds": 11.156}
+{"label": "600519_kline", "round": 3, "kind": "upstream", "at": "2026-09-23T01:31:35.472442+00:00", "rows": 16, "first_date": "2026-09-01", "last_date": "2026-09-22", "source": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get", "sha256": "6520174620c186ab7704b63d07db98ee5465f07c01c174d86f5b0401fe13ef8b", "ok": true, "seconds": 6.891}
+{"label": "600519_news", "round": 3, "kind": "upstream", "at": "2026-09-23T01:31:42.367106+00:00", "rows": 3, "empty": false, "ok": true, "seconds": 0.906}
+{"label": "600519/info", "round": 3, "kind": "api", "at": "2026-09-23T01:31:43.273453+00:00", "http": 200, "rows": null, "ok": true, "seconds": 9.547}
+{"label": "600519/kline?start_date=2026-09-01&end_date=2026-09-22", "round": 3, "kind": "api", "at": "2026-09-23T01:31:52.814840+00:00", "http": 200, "rows": 344, "ok": true, "seconds": 1.828}
+{"label": "600519/score", "round": 3, "kind": "api", "at": "2026-09-23T01:31:54.650914+00:00", "http": 200, "rows": null, "ok": true, "seconds": 0.015}
+{"label": "600519_search", "round": 3, "kind": "api", "at": "2026-09-23T01:31:54.681654+00:00", "http": 200, "rows": 1, "ok": true, "seconds": 0.016}
+{"label": "000001_info", "round": 3, "kind": "upstream", "at": "2026-09-23T01:31:54.689656+00:00", "ok": false, "error_type": "StockDataProviderError", "error": "AKShare info request failed for 000001: AKShare info request failed for 000001: AKShare call exceeded 0.5s (delayed-host fallback also failed: ReadTimeout: HTTPSConnectionPool(host='push2delay.eastmoney.com', port=443): Read timed out. (read timeout=3.0)) (Tencent quote fallback also failed: ReadTimeout: HTTPSConnectionPool(host='qt.gtimg.cn', port=443): Read timed out. (read timeout=3.0))", "seconds": 11.078}
+{"label": "000001_kline", "round": 3, "kind": "upstream", "at": "2026-09-23T01:32:05.774180+00:00", "ok": false, "error_type": "StockDataProviderError", "error": "AKShare request failed for 000001: AKShare call exceeded 0.5s (Tencent qfq fallback also failed: ReadTimeout: HTTPSConnectionPool(host='web.ifzq.gtimg.cn', port=443): Read timed out. (read timeout=3.0))", "seconds": 11.094}
+{"label": "000001_news", "round": 3, "kind": "upstream", "at": "2026-09-23T01:32:16.862391+00:00", "rows": 3, "empty": false, "ok": true, "seconds": 2.484}
+{"label": "000001/info", "round": 3, "kind": "api", "at": "2026-09-23T01:32:19.338628+00:00", "http": 200, "rows": null, "ok": true, "seconds": 9.344}
+{"label": "000001/kline?start_date=2026-09-01&end_date=2026-09-22", "round": 3, "kind": "api", "at": "2026-09-23T01:32:28.688101+00:00", "http": 200, "rows": 344, "ok": true, "seconds": 1.766}
+{"label": "000001/score", "round": 3, "kind": "api", "at": "2026-09-23T01:32:30.458705+00:00", "http": 200, "rows": null, "ok": true, "seconds": 0.031}
+{"label": "000001_search", "round": 3, "kind": "api", "at": "2026-09-23T01:32:30.490525+00:00", "http": 200, "rows": 1, "ok": true, "seconds": 0.015}
+{"label": "300750_info", "round": 3, "kind": "upstream", "at": "2026-09-23T01:32:30.498528+00:00", "name": "宁德时代", "industry_missing": true, "ok": true, "seconds": 9.563}
+{"label": "300750_kline", "round": 3, "kind": "upstream", "at": "2026-09-23T01:32:40.061596+00:00", "rows": 16, "first_date": "2026-09-01", "last_date": "2026-09-22", "source": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get", "sha256": "399bfe9b6eae99c17fda873fe568778774ef11aa7b1effbaf560a4b6de4b1d1b", "ok": true, "seconds": 3.266}
+{"label": "300750_news", "round": 3, "kind": "upstream", "at": "2026-09-23T01:32:43.329738+00:00", "ok": false, "error_type": "StockDataProviderError", "error": "AKShare news request failed for 300750: too many in-flight AKShare calls", "seconds": 1.5}
+{"label": "300750/info", "round": 3, "kind": "api", "at": "2026-09-23T01:32:44.831138+00:00", "http": 200, "rows": null, "ok": true, "seconds": 9.562}
+{"label": "300750/kline?start_date=2026-09-01&end_date=2026-09-22", "round": 3, "kind": "api", "at": "2026-09-23T01:32:54.387543+00:00", "http": 200, "rows": 344, "ok": true, "seconds": 5.938}
+{"label": "300750/score", "round": 3, "kind": "api", "at": "2026-09-23T01:33:00.329917+00:00", "http": 200, "rows": null, "ok": true, "seconds": 0.031}
+{"label": "300750_search", "round": 3, "kind": "api", "at": "2026-09-23T01:33:00.364366+00:00", "http": 200, "rows": 1, "ok": true, "seconds": 0.015}
+{"label": "name_search", "round": 3, "kind": "api", "at": "2026-09-23T01:33:00.372368+00:00", "http": 200, "rows": 1, "ok": true, "seconds": 0.0}
+{"label": "health", "round": 3, "kind": "api", "at": "2026-09-23T01:33:00.381370+00:00", "http": 200, "rows": null, "ok": true, "seconds": 0.0}
+{"label": "history", "round": 3, "kind": "api", "at": "2026-09-23T01:33:00.384371+00:00", "http": 200, "rows": null, "ok": true, "seconds": 0.016}
+{"label": "report_history", "round": 3, "kind": "api", "at": "2026-09-23T01:33:00.399373+00:00", "http": 200, "rows": null, "ok": true, "seconds": 0.016}
+{"label": "catalog_sync", "round": 4, "kind": "integration", "at": "2026-09-23T01:33:00.404375+00:00", "ok": false, "error_type": "RuntimeError", "error": "HTTP 502; {'code': 50001, 'message': 'data provider error', 'data': None}", "seconds": 33.218}
+{"label": "default_ai", "round": 4, "kind": "integration", "at": "2026-09-23T01:33:33.622389+00:00", "ok": false, "error_type": "RuntimeError", "error": "HTTP 502; {'code': 50001, 'message': 'data provider error', 'data': None}", "seconds": 11.079}
